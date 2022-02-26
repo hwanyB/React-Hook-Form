@@ -57,7 +57,7 @@
       color: blue;
     }
 
-    button {
+    .addBtn {
       margin: 0 auto;
       margin-top: 15px;
       display: block;
@@ -89,6 +89,17 @@
       font-weight: 700;
       line-height: 35px;
     }
+
+    .delBtn{
+      border: none;
+      color: blue;
+      line-height: 35px;
+      font-size: 18px;
+      font-weight: 900;
+      cursor: pointer;
+      background-color: transparent;
+      float: right;
+    }
   </style>
   <title>Vanilla Todo</title>
 </head>
@@ -99,7 +110,7 @@
       <h1>TO DOS</h1>
       <form>
         <input autofocus type="text" placeholder="Write To Do!" />
-        <button>ADD</button>
+        <button class="addBtn">ADD</button>
       </form>
       <ul></ul>
     </div>
