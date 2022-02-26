@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    
-    <title>Vanilla Todo</title>
-  </head>
-  <body>
-   <div>Hello</div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    main {
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+      text-align: center;
+      padding: 100px 150px;
+    }
+    div{
+      border: 1px solid blue;
+      padding: 100px;
+      border-radius: 30px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: 900;
+      color: blue;
+      margin-bottom: 30px;
+    }
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+
+    }
+
+    input {
+      width: 100%;
+      display: block;
+      border: 1px solid blue;
+      border-radius: 20px;
+      height: 35px;
+      text-align: center;
+      outline: none;
+      color: blue;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    input::placeholder {
+      color: blue;
+    }
+
+    button {
+      margin: 0 auto;
+      margin-top: 15px;
+      display: block;
+      background-color: blue;
+      width: 200px;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      height: 35px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    ul {
+      width: 300px;
+      margin: 0 auto;
+      list-style: square;
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    li {
+      border-bottom: 1px solid blue;
+      height: 35px;
+      padding: 0 20px;
+      color: blue;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 35px;
+    }
+  </style>
+  <title>Vanilla Todo</title>
+</head>
+
+<body>
+  <main>
+    <div>
+      <h1>TO DOS</h1>
+      <form>
+        <input autofocus type="text" placeholder="Write To Do!" />
+        <button>ADD</button>
+      </form>
+      <ul></ul>
+    </div>
+  </main>
+</body>
+
 </html>
