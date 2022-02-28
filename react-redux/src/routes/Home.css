@@ -79,7 +79,9 @@ main {
     display: flex;
     justify-content: space-between;
   }
-
+li p{
+  display: inline;
+}
   .delBtn{
     border: none;
     color: blue;
@@ -88,4 +90,15 @@ main {
     font-weight: 900;
     cursor: pointer;
     background-color: transparent;
+  }
+  .delBtn:hover{
+    color: red;
+    
+  }
+  .Link{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .Link:hover{
+    color: red;
   }
